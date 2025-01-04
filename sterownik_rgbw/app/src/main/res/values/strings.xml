@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sterownik RGBW</string>
+    <string name="connect">Połącz</string>
+    <string name="disconnect">Rozłącz</string>
+    <string name="select_color_from_list">Wybierz kolor z listy</string>
+    <string name="select_color_from_wheel">Wybierz kolor z koła barw</string>
+    <string name="color_wheel_description">Koło barw</string>
+    <string name="color_indicator_description">Wskaźnik koloru</string>
+    <string name="brightness">Jasność:</string>
+    <string name="waiting">Oczekiwanie</string>
+    <string name="smooth_effect">Płynny</string>
+    <string name="breathing_effect">Oddychanie</string>
+    <string name="strobe_effect">Stroboskop</string>
+    <string name="stop_effect">Zatrzymaj efekt</string>
+</resources>

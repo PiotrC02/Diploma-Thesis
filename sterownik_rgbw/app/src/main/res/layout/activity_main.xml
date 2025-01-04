@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#2F2F2F">
+
+        <LinearLayout
+            android:id="@+id/connectionButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/connect"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:enabled="true"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnDisconnect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/disconnect"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:enabled="false"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewSelectColorFromList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_color_from_list"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSelectColorFromWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_color_from_wheel"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp" />
+
+        <FrameLayout
+            android:id="@+id/colorWheelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/colorWheel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rgb_color_wheel"
+                android:contentDescription="@string/color_wheel_description"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/colorIndicator"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/indicator"
+                android:contentDescription="@string/color_indicator_description"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/seekBarBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="100"
+            android:enabled="false"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/brightnessPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brightness"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textViewButtonState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waiting"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/effectButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnSmoothEffect"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Płynny"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minHeight="48dp"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btnBreathingEffect"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Oddychanie"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="4dp">
+
+                <Button
+                    android:id="@+id/btnStrobeEffect"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Stroboskop"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minHeight="48dp"
+                    android:layout_marginEnd="4dp" />
+
+                <Button
+                    android:id="@+id/btnStopEffect"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Zatrzymaj efekt"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Sterownik_rgbw" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/graphite_500</item>
+        <item name="colorPrimaryDark">@color/graphite_700</item>
+        <item name="colorAccent">@color/graphite_accent</item>
+    </style>
+</resources>
